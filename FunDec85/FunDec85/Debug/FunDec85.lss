@@ -1,0 +1,813 @@
+
+FunDec85.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000498  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00000498  0000052c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000019  00800060  00800060  0000052c  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  0000052c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000097  00000000  00000000  00000bf8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  00000c8f  2**0
+                  CONTENTS, READONLY
+  6 .debug_aranges 00000060  00000000  00000000  00000cbe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   0000049b  00000000  00000000  00000d1e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 000001b0  00000000  00000000  000011b9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   00000316  00000000  00000000  00001369  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  000000d0  00000000  00000000  00001680  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    000001c1  00000000  00000000  00001750  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000146  00000000  00000000  00001911  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 00000058  00000000  00000000  00001a57  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	22 c0       	rjmp	.+68     	; 0x46 <__ctors_end>
+   2:	3c c0       	rjmp	.+120    	; 0x7c <__bad_interrupt>
+   4:	e7 c1       	rjmp	.+974    	; 0x3d4 <__vector_2>
+   6:	3a c0       	rjmp	.+116    	; 0x7c <__bad_interrupt>
+   8:	39 c0       	rjmp	.+114    	; 0x7c <__bad_interrupt>
+   a:	38 c0       	rjmp	.+112    	; 0x7c <__bad_interrupt>
+   c:	37 c0       	rjmp	.+110    	; 0x7c <__bad_interrupt>
+   e:	36 c0       	rjmp	.+108    	; 0x7c <__bad_interrupt>
+  10:	35 c0       	rjmp	.+106    	; 0x7c <__bad_interrupt>
+  12:	34 c0       	rjmp	.+104    	; 0x7c <__bad_interrupt>
+  14:	33 c0       	rjmp	.+102    	; 0x7c <__bad_interrupt>
+  16:	32 c0       	rjmp	.+100    	; 0x7c <__bad_interrupt>
+  18:	31 c0       	rjmp	.+98     	; 0x7c <__bad_interrupt>
+  1a:	30 c0       	rjmp	.+96     	; 0x7c <__bad_interrupt>
+  1c:	2f c0       	rjmp	.+94     	; 0x7c <__bad_interrupt>
+  1e:	a4 c0       	rjmp	.+328    	; 0x168 <switchAdr+0x14>
+  20:	a6 c0       	rjmp	.+332    	; 0x16e <switchAdr+0x1a>
+  22:	ac c0       	rjmp	.+344    	; 0x17c <switchAdr+0x28>
+  24:	bb c0       	rjmp	.+374    	; 0x19c <switchAdr+0x48>
+  26:	a3 c0       	rjmp	.+326    	; 0x16e <switchAdr+0x1a>
+  28:	c9 c0       	rjmp	.+402    	; 0x1bc <switchAdr+0x68>
+  2a:	d8 c0       	rjmp	.+432    	; 0x1dc <switchAdr+0x88>
+  2c:	e7 c0       	rjmp	.+462    	; 0x1fc <switchAdr+0xa8>
+  2e:	1c c1       	rjmp	.+568    	; 0x268 <__stack+0x9>
+  30:	28 c1       	rjmp	.+592    	; 0x282 <__stack+0x23>
+  32:	10 c1       	rjmp	.+544    	; 0x254 <switchData+0x30>
+  34:	39 c1       	rjmp	.+626    	; 0x2a8 <__stack+0x49>
+  36:	4b c1       	rjmp	.+662    	; 0x2ce <__stack+0x6f>
+  38:	0d c1       	rjmp	.+538    	; 0x254 <switchData+0x30>
+  3a:	5c c1       	rjmp	.+696    	; 0x2f4 <__stack+0x95>
+  3c:	6e c1       	rjmp	.+732    	; 0x31a <__stack+0xbb>
+  3e:	0a c1       	rjmp	.+532    	; 0x254 <switchData+0x30>
+  40:	7f c1       	rjmp	.+766    	; 0x340 <__stack+0xe1>
+  42:	91 c1       	rjmp	.+802    	; 0x366 <__stack+0x107>
+  44:	a3 c1       	rjmp	.+838    	; 0x38c <__stack+0x12d>
+
+00000046 <__ctors_end>:
+  46:	11 24       	eor	r1, r1
+  48:	1f be       	out	0x3f, r1	; 63
+  4a:	cf e5       	ldi	r28, 0x5F	; 95
+  4c:	d2 e0       	ldi	r29, 0x02	; 2
+  4e:	de bf       	out	0x3e, r29	; 62
+  50:	cd bf       	out	0x3d, r28	; 61
+
+00000052 <__do_copy_data>:
+  52:	10 e0       	ldi	r17, 0x00	; 0
+  54:	a0 e6       	ldi	r26, 0x60	; 96
+  56:	b0 e0       	ldi	r27, 0x00	; 0
+  58:	e8 e9       	ldi	r30, 0x98	; 152
+  5a:	f4 e0       	ldi	r31, 0x04	; 4
+  5c:	02 c0       	rjmp	.+4      	; 0x62 <__do_copy_data+0x10>
+  5e:	05 90       	lpm	r0, Z+
+  60:	0d 92       	st	X+, r0
+  62:	a0 36       	cpi	r26, 0x60	; 96
+  64:	b1 07       	cpc	r27, r17
+  66:	d9 f7       	brne	.-10     	; 0x5e <__do_copy_data+0xc>
+
+00000068 <__do_clear_bss>:
+  68:	20 e0       	ldi	r18, 0x00	; 0
+  6a:	a0 e6       	ldi	r26, 0x60	; 96
+  6c:	b0 e0       	ldi	r27, 0x00	; 0
+  6e:	01 c0       	rjmp	.+2      	; 0x72 <.do_clear_bss_start>
+
+00000070 <.do_clear_bss_loop>:
+  70:	1d 92       	st	X+, r1
+
+00000072 <.do_clear_bss_start>:
+  72:	a9 37       	cpi	r26, 0x79	; 121
+  74:	b2 07       	cpc	r27, r18
+  76:	e1 f7       	brne	.-8      	; 0x70 <.do_clear_bss_loop>
+  78:	20 d0       	rcall	.+64     	; 0xba <main>
+  7a:	0c c2       	rjmp	.+1048   	; 0x494 <_exit>
+
+0000007c <__bad_interrupt>:
+  7c:	c1 cf       	rjmp	.-126    	; 0x0 <__vectors>
+
+0000007e <setup>:
+uint8_t pwmCount;
+uint8_t sxCopy;
+
+void setup() {
+
+    wdt_enable(WDTO_1S);    // enable watchdog
+  7e:	2e e0       	ldi	r18, 0x0E	; 14
+  80:	88 e1       	ldi	r24, 0x18	; 24
+  82:	90 e0       	ldi	r25, 0x00	; 0
+  84:	0f b6       	in	r0, 0x3f	; 63
+  86:	f8 94       	cli
+  88:	a8 95       	wdr
+  8a:	81 bd       	out	0x21, r24	; 33
+  8c:	0f be       	out	0x3f, r0	; 63
+  8e:	21 bd       	out	0x21, r18	; 33
+
+    counter[0] = counter[1] = LIMIT;
+  90:	85 e0       	ldi	r24, 0x05	; 5
+  92:	80 93 6a 00 	sts	0x006A, r24
+  96:	80 93 69 00 	sts	0x0069, r24
+    data_received = FALSE;
+  9a:	10 92 6e 00 	sts	0x006E, r1
+    pwmCount=0;
+  9e:	10 92 65 00 	sts	0x0065, r1
+    
+    myBaseAdr = 15 - (((uint8_t)DECODER_ADDRESS) & 0x0f);
+  a2:	8c e0       	ldi	r24, 0x0C	; 12
+  a4:	80 93 70 00 	sts	0x0070, r24
+    myFrameCount = 6 - (((uint8_t)DECODER_ADDRESS) >> 4);
+  a8:	91 e0       	ldi	r25, 0x01	; 1
+  aa:	90 93 6f 00 	sts	0x006F, r25
+    GIMSK =  (1 << SXPCIE);     // set PCIE1 to enable PCINT
+    //PCMSK1 Register controls which pins contribute to the pin change interrupts
+    PCMSK1 = (1 << SX1INT) | (1 << SX2INT) ;   // set PCINT to trigger an interrupt on state change
+
+    #elif defined (__AVR_ATtiny85__)
+    DDRB = (1 << OUT0) ||(1 << OUT1);
+  ae:	97 bb       	out	0x17, r25	; 23
+
+    GIMSK =  (1 << SXPCIE);     // set PCIE0 to enable PCINT
+  b0:	90 e2       	ldi	r25, 0x20	; 32
+  b2:	9b bf       	out	0x3b, r25	; 59
+    //PCMSK Register controls which pins contribute to the pin change interrupts
+    PCMSK = (1 << SX1INT) | (1 << SX2INT) ;   // set PCINT to trigger an interrupt on state change
+  b4:	85 bb       	out	0x15, r24	; 21
+    #endif
+    sei();
+  b6:	78 94       	sei
+  b8:	08 95       	ret
+
+000000ba <main>:
+pwm_cnt++;
+}   */
+
+int main() {
+
+    setup();
+  ba:	e1 df       	rcall	.-62     	; 0x7e <setup>
+                PORTA |= (1 << PA1);
+                } else {
+                PORTA &= ~(1 << PA1) ;
+            }
+#elif defined (__AVR_ATtiny85__)
+            if (counter[0] >= LIMIT) {
+  bc:	a9 e6       	ldi	r26, 0x69	; 105
+  be:	b0 e0       	ldi	r27, 0x00	; 0
+                PORTB |= (1 << OUT0);
+                } else {
+                PORTB &= ~(1 << OUT0) ;
+            }
+            
+            if ( counter[1] >= LIMIT) {
+  c0:	ea e6       	ldi	r30, 0x6A	; 106
+  c2:	f0 e0       	ldi	r31, 0x00	; 0
+            // new data available, update filter
+            // new data can be available at max every 77ms
+            for (uint8_t i=0; i<2 ; i++) {
+                if (sxCopy & (1 << (i+SUB_ADDRESS))) {
+                    counter[i]++;
+                    if (counter[i] > MAXCOUNTER ) { counter[i] = MAXCOUNTER; }
+  c4:	2a e0       	ldi	r18, 0x0A	; 10
+
+    setup();
+
+    while(1)
+    {
+        wdt_reset();
+  c6:	a8 95       	wdr
+       // _delay_ms(20);
+
+        if (data_received == TRUE) {
+  c8:	80 91 6e 00 	lds	r24, 0x006E
+  cc:	81 30       	cpi	r24, 0x01	; 1
+  ce:	d9 f7       	brne	.-10     	; 0xc6 <main+0xc>
+            sxCopy = sx;
+  d0:	80 91 66 00 	lds	r24, 0x0066
+  d4:	80 93 6b 00 	sts	0x006B, r24
+            data_received = FALSE;
+  d8:	10 92 6e 00 	sts	0x006E, r1
+            // new data available, update filter
+            // new data can be available at max every 77ms
+            for (uint8_t i=0; i<2 ; i++) {
+                if (sxCopy & (1 << (i+SUB_ADDRESS))) {
+  dc:	84 fd       	sbrc	r24, 4
+  de:	07 c0       	rjmp	.+14     	; 0xee <main+0x34>
+                    counter[i]++;
+                    if (counter[i] > MAXCOUNTER ) { counter[i] = MAXCOUNTER; }
+
+                    } else {
+                    if (counter[i] != 0) counter[i]--;
+  e0:	9c 91       	ld	r25, X
+  e2:	99 23       	and	r25, r25
+  e4:	59 f0       	breq	.+22     	; 0xfc <main+0x42>
+  e6:	9c 91       	ld	r25, X
+  e8:	91 50       	subi	r25, 0x01	; 1
+  ea:	9c 93       	st	X, r25
+  ec:	07 c0       	rjmp	.+14     	; 0xfc <main+0x42>
+            data_received = FALSE;
+            // new data available, update filter
+            // new data can be available at max every 77ms
+            for (uint8_t i=0; i<2 ; i++) {
+                if (sxCopy & (1 << (i+SUB_ADDRESS))) {
+                    counter[i]++;
+  ee:	9c 91       	ld	r25, X
+  f0:	9f 5f       	subi	r25, 0xFF	; 255
+  f2:	9c 93       	st	X, r25
+                    if (counter[i] > MAXCOUNTER ) { counter[i] = MAXCOUNTER; }
+  f4:	9c 91       	ld	r25, X
+  f6:	9b 30       	cpi	r25, 0x0B	; 11
+  f8:	08 f0       	brcs	.+2      	; 0xfc <main+0x42>
+  fa:	2c 93       	st	X, r18
+            sxCopy = sx;
+            data_received = FALSE;
+            // new data available, update filter
+            // new data can be available at max every 77ms
+            for (uint8_t i=0; i<2 ; i++) {
+                if (sxCopy & (1 << (i+SUB_ADDRESS))) {
+  fc:	85 ff       	sbrs	r24, 5
+  fe:	08 c0       	rjmp	.+16     	; 0x110 <main+0x56>
+                    counter[i]++;
+ 100:	80 81       	ld	r24, Z
+ 102:	8f 5f       	subi	r24, 0xFF	; 255
+ 104:	80 83       	st	Z, r24
+                    if (counter[i] > MAXCOUNTER ) { counter[i] = MAXCOUNTER; }
+ 106:	80 81       	ld	r24, Z
+ 108:	8b 30       	cpi	r24, 0x0B	; 11
+ 10a:	40 f0       	brcs	.+16     	; 0x11c <main+0x62>
+ 10c:	20 83       	st	Z, r18
+ 10e:	06 c0       	rjmp	.+12     	; 0x11c <main+0x62>
+
+                    } else {
+                    if (counter[i] != 0) counter[i]--;
+ 110:	80 81       	ld	r24, Z
+ 112:	88 23       	and	r24, r24
+ 114:	19 f0       	breq	.+6      	; 0x11c <main+0x62>
+ 116:	80 81       	ld	r24, Z
+ 118:	81 50       	subi	r24, 0x01	; 1
+ 11a:	80 83       	st	Z, r24
+                PORTA |= (1 << PA1);
+                } else {
+                PORTA &= ~(1 << PA1) ;
+            }
+#elif defined (__AVR_ATtiny85__)
+            if (counter[0] >= LIMIT) {
+ 11c:	8c 91       	ld	r24, X
+ 11e:	85 30       	cpi	r24, 0x05	; 5
+ 120:	10 f0       	brcs	.+4      	; 0x126 <main+0x6c>
+                PORTB |= (1 << OUT0);
+ 122:	c0 9a       	sbi	0x18, 0	; 24
+ 124:	01 c0       	rjmp	.+2      	; 0x128 <main+0x6e>
+                } else {
+                PORTB &= ~(1 << OUT0) ;
+ 126:	c0 98       	cbi	0x18, 0	; 24
+            }
+            
+            if ( counter[1] >= LIMIT) {
+ 128:	80 81       	ld	r24, Z
+ 12a:	85 30       	cpi	r24, 0x05	; 5
+ 12c:	10 f0       	brcs	.+4      	; 0x132 <main+0x78>
+                PORTB |= (1 << OUT1);
+ 12e:	c1 9a       	sbi	0x18, 1	; 24
+ 130:	ca cf       	rjmp	.-108    	; 0xc6 <main+0xc>
+                } else {
+                PORTB &= ~(1 << OUT1) ;
+ 132:	c1 98       	cbi	0x18, 1	; 24
+ 134:	c8 cf       	rjmp	.-112    	; 0xc6 <main+0xc>
+
+00000136 <resetSync>:
+
+// 0  0  0  1  X   1  B3  B2  1  B1  B0  1 == sync frame of 12 bits
+
+
+void resetSync() {
+    _dataFrameCount=0;
+ 136:	10 92 77 00 	sts	0x0077, r1
+    _data = 0;
+ 13a:	10 92 61 00 	sts	0x0061, r1
+    _state =SYNC;
+ 13e:	10 92 62 00 	sts	0x0062, r1
+    _zeroCount = 0;
+ 142:	10 92 64 00 	sts	0x0064, r1
+    _dataBitCount=0;
+ 146:	10 92 78 00 	sts	0x0078, r1
+    _sx_tmp=0;
+ 14a:	10 92 72 00 	sts	0x0072, r1
+    _data_rec=0;
+ 14e:	10 92 71 00 	sts	0x0071, r1
+ 152:	08 95       	ret
+
+00000154 <switchAdr>:
+
+
+void switchAdr() {
+    // a SYNC signal was received, now look for a valid
+    // base address
+    switch(_adrCount) {
+ 154:	e0 91 63 00 	lds	r30, 0x0063
+ 158:	f0 e0       	ldi	r31, 0x00	; 0
+ 15a:	e8 30       	cpi	r30, 0x08	; 8
+ 15c:	f1 05       	cpc	r31, r1
+ 15e:	08 f0       	brcs	.+2      	; 0x162 <switchAdr+0xe>
+ 160:	60 c0       	rjmp	.+192    	; 0x222 <switchAdr+0xce>
+ 162:	e1 5f       	subi	r30, 0xF1	; 241
+ 164:	ff 4f       	sbci	r31, 0xFF	; 255
+ 166:	09 94       	ijmp
+        case 0:   // this is the GLEISSPANNUNG bit
+        _baseAdr=0;
+ 168:	10 92 60 00 	sts	0x0060, r1
+        break; // ignore
+ 16c:	08 95       	ret
+        case 1:
+        case 4:
+        if (_bit != HIGH) {
+ 16e:	80 91 75 00 	lds	r24, 0x0075
+ 172:	81 30       	cpi	r24, 0x01	; 1
+ 174:	09 f4       	brne	.+2      	; 0x178 <switchAdr+0x24>
+ 176:	55 c0       	rjmp	.+170    	; 0x222 <switchAdr+0xce>
+            resetSync();
+ 178:	de df       	rcall	.-68     	; 0x136 <resetSync>
+ 17a:	08 95       	ret
+        }
+        break; // ignore
+        case 2:  // B3
+        bitWrite(_baseAdr,3,_bit);
+ 17c:	80 91 75 00 	lds	r24, 0x0075
+ 180:	88 23       	and	r24, r24
+ 182:	31 f0       	breq	.+12     	; 0x190 <switchAdr+0x3c>
+ 184:	80 91 60 00 	lds	r24, 0x0060
+ 188:	88 60       	ori	r24, 0x08	; 8
+ 18a:	80 93 60 00 	sts	0x0060, r24
+ 18e:	08 95       	ret
+ 190:	80 91 60 00 	lds	r24, 0x0060
+ 194:	87 7f       	andi	r24, 0xF7	; 247
+ 196:	80 93 60 00 	sts	0x0060, r24
+ 19a:	08 95       	ret
+        break;
+        case 3:  // B2
+        bitWrite(_baseAdr,2,_bit);
+ 19c:	80 91 75 00 	lds	r24, 0x0075
+ 1a0:	88 23       	and	r24, r24
+ 1a2:	31 f0       	breq	.+12     	; 0x1b0 <switchAdr+0x5c>
+ 1a4:	80 91 60 00 	lds	r24, 0x0060
+ 1a8:	84 60       	ori	r24, 0x04	; 4
+ 1aa:	80 93 60 00 	sts	0x0060, r24
+ 1ae:	08 95       	ret
+ 1b0:	80 91 60 00 	lds	r24, 0x0060
+ 1b4:	8b 7f       	andi	r24, 0xFB	; 251
+ 1b6:	80 93 60 00 	sts	0x0060, r24
+ 1ba:	08 95       	ret
+        break;
+        case 5:  // B1
+        bitWrite(_baseAdr,1,_bit);
+ 1bc:	80 91 75 00 	lds	r24, 0x0075
+ 1c0:	88 23       	and	r24, r24
+ 1c2:	31 f0       	breq	.+12     	; 0x1d0 <switchAdr+0x7c>
+ 1c4:	80 91 60 00 	lds	r24, 0x0060
+ 1c8:	82 60       	ori	r24, 0x02	; 2
+ 1ca:	80 93 60 00 	sts	0x0060, r24
+ 1ce:	08 95       	ret
+ 1d0:	80 91 60 00 	lds	r24, 0x0060
+ 1d4:	8d 7f       	andi	r24, 0xFD	; 253
+ 1d6:	80 93 60 00 	sts	0x0060, r24
+ 1da:	08 95       	ret
+        break;
+        case 6:  // B0
+        bitWrite(_baseAdr,0,_bit);
+ 1dc:	80 91 75 00 	lds	r24, 0x0075
+ 1e0:	88 23       	and	r24, r24
+ 1e2:	31 f0       	breq	.+12     	; 0x1f0 <switchAdr+0x9c>
+ 1e4:	80 91 60 00 	lds	r24, 0x0060
+ 1e8:	81 60       	ori	r24, 0x01	; 1
+ 1ea:	80 93 60 00 	sts	0x0060, r24
+ 1ee:	08 95       	ret
+ 1f0:	80 91 60 00 	lds	r24, 0x0060
+ 1f4:	8e 7f       	andi	r24, 0xFE	; 254
+ 1f6:	80 93 60 00 	sts	0x0060, r24
+ 1fa:	08 95       	ret
+        break;
+        case 7: // last "1"
+        // _baseAdr is complete !
+        if ( (_bit != HIGH)
+ 1fc:	80 91 75 00 	lds	r24, 0x0075
+ 200:	81 30       	cpi	r24, 0x01	; 1
+ 202:	31 f4       	brne	.+12     	; 0x210 <switchAdr+0xbc>
+        ||
+ 204:	90 91 60 00 	lds	r25, 0x0060
+ 208:	80 91 70 00 	lds	r24, 0x0070
+ 20c:	98 17       	cp	r25, r24
+ 20e:	11 f0       	breq	.+4      	; 0x214 <switchAdr+0xc0>
+        (_baseAdr != myBaseAdr) ){
+            resetSync();
+ 210:	92 df       	rcall	.-220    	; 0x136 <resetSync>
+ 212:	08 95       	ret
+            }  else {
+            // advance to next state - next we are looking
+            // for the 7 data bytes (i.e. 7 SX Channels)
+            _state = DATA;
+ 214:	82 e0       	ldi	r24, 0x02	; 2
+ 216:	80 93 62 00 	sts	0x0062, r24
+            _dataFrameCount = 0;
+ 21a:	10 92 77 00 	sts	0x0077, r1
+            _dataBitCount = 0;
+ 21e:	10 92 78 00 	sts	0x0078, r1
+ 222:	08 95       	ret
+
+00000224 <switchData>:
+    // continue reading _data
+    // a total of 7 DATA blocks will be received
+    // for a certain base-address
+
+    // calc sx channel from baseAdr and dataFrameCount
+    _channel = (15-_baseAdr) + ((6-_dataFrameCount)<<4);
+ 224:	80 91 77 00 	lds	r24, 0x0077
+ 228:	30 91 60 00 	lds	r19, 0x0060
+ 22c:	2f e0       	ldi	r18, 0x0F	; 15
+ 22e:	23 1b       	sub	r18, r19
+ 230:	96 e0       	ldi	r25, 0x06	; 6
+ 232:	98 1b       	sub	r25, r24
+ 234:	92 95       	swap	r25
+ 236:	90 7f       	andi	r25, 0xF0	; 240
+ 238:	92 0f       	add	r25, r18
+ 23a:	90 93 74 00 	sts	0x0074, r25
+
+    switch(_dataBitCount) {
+ 23e:	20 91 78 00 	lds	r18, 0x0078
+ 242:	e2 2f       	mov	r30, r18
+ 244:	f0 e0       	ldi	r31, 0x00	; 0
+ 246:	ec 30       	cpi	r30, 0x0C	; 12
+ 248:	f1 05       	cpc	r31, r1
+ 24a:	08 f0       	brcs	.+2      	; 0x24e <switchData+0x2a>
+ 24c:	c2 c0       	rjmp	.+388    	; 0x3d2 <__stack+0x173>
+ 24e:	e9 5e       	subi	r30, 0xE9	; 233
+ 250:	ff 4f       	sbci	r31, 0xFF	; 255
+ 252:	09 94       	ijmp
+        case 2:  // "Trenn_bits"
+        case 5:
+        case 8:
+        if (_bit != HIGH) {
+ 254:	80 91 75 00 	lds	r24, 0x0075
+ 258:	81 30       	cpi	r24, 0x01	; 1
+ 25a:	11 f0       	breq	.+4      	; 0x260 <__stack+0x1>
+            resetSync();
+ 25c:	6c df       	rcall	.-296    	; 0x136 <resetSync>
+ 25e:	08 95       	ret
+            } else {
+            _dataBitCount++;
+ 260:	2f 5f       	subi	r18, 0xFF	; 255
+ 262:	20 93 78 00 	sts	0x0078, r18
+ 266:	08 95       	ret
+        }
+        break; // ignore
+        case 0:  // D0
+        _data=0;
+ 268:	10 92 61 00 	sts	0x0061, r1
+        bitWrite(_data,0,_bit);
+ 26c:	80 91 75 00 	lds	r24, 0x0075
+ 270:	88 23       	and	r24, r24
+ 272:	19 f0       	breq	.+6      	; 0x27a <__stack+0x1b>
+ 274:	81 e0       	ldi	r24, 0x01	; 1
+ 276:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 27a:	81 e0       	ldi	r24, 0x01	; 1
+ 27c:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 280:	08 95       	ret
+        case 1:  // D1
+        bitWrite(_data,1,_bit);
+ 282:	80 91 75 00 	lds	r24, 0x0075
+ 286:	88 23       	and	r24, r24
+ 288:	31 f0       	breq	.+12     	; 0x296 <__stack+0x37>
+ 28a:	80 91 61 00 	lds	r24, 0x0061
+ 28e:	82 60       	ori	r24, 0x02	; 2
+ 290:	80 93 61 00 	sts	0x0061, r24
+ 294:	05 c0       	rjmp	.+10     	; 0x2a0 <__stack+0x41>
+ 296:	80 91 61 00 	lds	r24, 0x0061
+ 29a:	8d 7f       	andi	r24, 0xFD	; 253
+ 29c:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 2a0:	82 e0       	ldi	r24, 0x02	; 2
+ 2a2:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 2a6:	08 95       	ret
+        case 3:  // D2
+        bitWrite(_data,2,_bit);
+ 2a8:	80 91 75 00 	lds	r24, 0x0075
+ 2ac:	88 23       	and	r24, r24
+ 2ae:	31 f0       	breq	.+12     	; 0x2bc <__stack+0x5d>
+ 2b0:	80 91 61 00 	lds	r24, 0x0061
+ 2b4:	84 60       	ori	r24, 0x04	; 4
+ 2b6:	80 93 61 00 	sts	0x0061, r24
+ 2ba:	05 c0       	rjmp	.+10     	; 0x2c6 <__stack+0x67>
+ 2bc:	80 91 61 00 	lds	r24, 0x0061
+ 2c0:	8b 7f       	andi	r24, 0xFB	; 251
+ 2c2:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 2c6:	84 e0       	ldi	r24, 0x04	; 4
+ 2c8:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 2cc:	08 95       	ret
+        case 4:  // D3
+        bitWrite(_data,3,_bit);
+ 2ce:	80 91 75 00 	lds	r24, 0x0075
+ 2d2:	88 23       	and	r24, r24
+ 2d4:	31 f0       	breq	.+12     	; 0x2e2 <__stack+0x83>
+ 2d6:	80 91 61 00 	lds	r24, 0x0061
+ 2da:	88 60       	ori	r24, 0x08	; 8
+ 2dc:	80 93 61 00 	sts	0x0061, r24
+ 2e0:	05 c0       	rjmp	.+10     	; 0x2ec <__stack+0x8d>
+ 2e2:	80 91 61 00 	lds	r24, 0x0061
+ 2e6:	87 7f       	andi	r24, 0xF7	; 247
+ 2e8:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 2ec:	85 e0       	ldi	r24, 0x05	; 5
+ 2ee:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 2f2:	08 95       	ret
+        case 6:  // D4
+        bitWrite(_data,4,_bit);
+ 2f4:	80 91 75 00 	lds	r24, 0x0075
+ 2f8:	88 23       	and	r24, r24
+ 2fa:	31 f0       	breq	.+12     	; 0x308 <__stack+0xa9>
+ 2fc:	80 91 61 00 	lds	r24, 0x0061
+ 300:	80 61       	ori	r24, 0x10	; 16
+ 302:	80 93 61 00 	sts	0x0061, r24
+ 306:	05 c0       	rjmp	.+10     	; 0x312 <__stack+0xb3>
+ 308:	80 91 61 00 	lds	r24, 0x0061
+ 30c:	8f 7e       	andi	r24, 0xEF	; 239
+ 30e:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 312:	87 e0       	ldi	r24, 0x07	; 7
+ 314:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 318:	08 95       	ret
+        case 7:  // D5
+        bitWrite(_data,5,_bit);
+ 31a:	80 91 75 00 	lds	r24, 0x0075
+ 31e:	88 23       	and	r24, r24
+ 320:	31 f0       	breq	.+12     	; 0x32e <__stack+0xcf>
+ 322:	80 91 61 00 	lds	r24, 0x0061
+ 326:	80 62       	ori	r24, 0x20	; 32
+ 328:	80 93 61 00 	sts	0x0061, r24
+ 32c:	05 c0       	rjmp	.+10     	; 0x338 <__stack+0xd9>
+ 32e:	80 91 61 00 	lds	r24, 0x0061
+ 332:	8f 7d       	andi	r24, 0xDF	; 223
+ 334:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 338:	88 e0       	ldi	r24, 0x08	; 8
+ 33a:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 33e:	08 95       	ret
+        case 9:  // D6
+        bitWrite(_data,6,_bit);
+ 340:	80 91 75 00 	lds	r24, 0x0075
+ 344:	88 23       	and	r24, r24
+ 346:	31 f0       	breq	.+12     	; 0x354 <__stack+0xf5>
+ 348:	80 91 61 00 	lds	r24, 0x0061
+ 34c:	80 64       	ori	r24, 0x40	; 64
+ 34e:	80 93 61 00 	sts	0x0061, r24
+ 352:	05 c0       	rjmp	.+10     	; 0x35e <__stack+0xff>
+ 354:	80 91 61 00 	lds	r24, 0x0061
+ 358:	8f 7b       	andi	r24, 0xBF	; 191
+ 35a:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 35e:	8a e0       	ldi	r24, 0x0A	; 10
+ 360:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 364:	08 95       	ret
+        case 10: // D7
+        bitWrite(_data,7,_bit);
+ 366:	80 91 75 00 	lds	r24, 0x0075
+ 36a:	88 23       	and	r24, r24
+ 36c:	31 f0       	breq	.+12     	; 0x37a <__stack+0x11b>
+ 36e:	80 91 61 00 	lds	r24, 0x0061
+ 372:	80 68       	ori	r24, 0x80	; 128
+ 374:	80 93 61 00 	sts	0x0061, r24
+ 378:	05 c0       	rjmp	.+10     	; 0x384 <__stack+0x125>
+ 37a:	80 91 61 00 	lds	r24, 0x0061
+ 37e:	8f 77       	andi	r24, 0x7F	; 127
+ 380:	80 93 61 00 	sts	0x0061, r24
+        _dataBitCount++;
+ 384:	8b e0       	ldi	r24, 0x0B	; 11
+ 386:	80 93 78 00 	sts	0x0078, r24
+        break;
+ 38a:	08 95       	ret
+        case 11:  // == MAX_DATABITCOUNT
+        // _bit value should always equal HIGH
+        if (_bit != HIGH) {
+ 38c:	20 91 75 00 	lds	r18, 0x0075
+ 390:	21 30       	cpi	r18, 0x01	; 1
+ 392:	11 f0       	breq	.+4      	; 0x398 <__stack+0x139>
+            resetSync();
+ 394:	d0 de       	rcall	.-608    	; 0x136 <resetSync>
+ 396:	08 95       	ret
+            } else {
+            if (_channel == DECODER_ADDRESS) {
+ 398:	93 35       	cpi	r25, 0x53	; 83
+ 39a:	39 f4       	brne	.+14     	; 0x3aa <__stack+0x14b>
+                _sx_tmp = _data;
+ 39c:	90 91 61 00 	lds	r25, 0x0061
+ 3a0:	90 93 72 00 	sts	0x0072, r25
+                _data_rec = TRUE;
+ 3a4:	91 e0       	ldi	r25, 0x01	; 1
+ 3a6:	90 93 71 00 	sts	0x0071, r25
+            }
+            // increment dataFrameCount to move on the next DATA byte
+            // check, if we already reached the last DATA block - in this
+            // case move on to the next SX-Datenpaket, i.e. look for SYNC
+            _dataFrameCount ++;
+ 3aa:	8f 5f       	subi	r24, 0xFF	; 255
+ 3ac:	80 93 77 00 	sts	0x0077, r24
+            if (_dataFrameCount == MAX_DATACOUNT) {
+ 3b0:	87 30       	cpi	r24, 0x07	; 7
+ 3b2:	69 f4       	brne	.+26     	; 0x3ce <__stack+0x16f>
+                if (_data_rec) {
+ 3b4:	80 91 71 00 	lds	r24, 0x0071
+ 3b8:	88 23       	and	r24, r24
+ 3ba:	39 f0       	breq	.+14     	; 0x3ca <__stack+0x16b>
+                    sx = _sx_tmp;
+ 3bc:	80 91 72 00 	lds	r24, 0x0072
+ 3c0:	80 93 66 00 	sts	0x0066, r24
+                    data_received = TRUE;  // indicate new data for main prog.
+ 3c4:	81 e0       	ldi	r24, 0x01	; 1
+ 3c6:	80 93 6e 00 	sts	0x006E, r24
+                }
+                // and move on to SYNC _state
+                resetSync();
+ 3ca:	b5 de       	rcall	.-662    	; 0x136 <resetSync>
+ 3cc:	08 95       	ret
+                } else {
+                _dataBitCount = 0;  // reset _bit counter
+ 3ce:	10 92 78 00 	sts	0x0078, r1
+ 3d2:	08 95       	ret
+
+000003d4 <__vector_2>:
+}
+
+
+// assuming PCIE1 is set
+
+ISR(INTERUPT_VECTOR)  {
+ 3d4:	1f 92       	push	r1
+ 3d6:	0f 92       	push	r0
+ 3d8:	0f b6       	in	r0, 0x3f	; 63
+ 3da:	0f 92       	push	r0
+ 3dc:	11 24       	eor	r1, r1
+ 3de:	2f 93       	push	r18
+ 3e0:	3f 93       	push	r19
+ 3e2:	4f 93       	push	r20
+ 3e4:	5f 93       	push	r21
+ 3e6:	6f 93       	push	r22
+ 3e8:	7f 93       	push	r23
+ 3ea:	8f 93       	push	r24
+ 3ec:	9f 93       	push	r25
+ 3ee:	af 93       	push	r26
+ 3f0:	bf 93       	push	r27
+ 3f2:	ef 93       	push	r30
+ 3f4:	ff 93       	push	r31
+    // Pin Change Interrupt
+    
+    uint8_t _inputb, _in;
+    _inputb = PINB & ( (1 << SX1) | (1 << SX2) );
+ 3f6:	86 b3       	in	r24, 0x16	; 22
+ 3f8:	8c 70       	andi	r24, 0x0C	; 12
+    
+    if  (_inputb == (1 << SX1)) {
+ 3fa:	88 30       	cpi	r24, 0x08	; 8
+ 3fc:	21 f0       	breq	.+8      	; 0x406 <__vector_2+0x32>
+        // SX1 toggled and is high
+        _in = 1;
+        } else if  (_inputb == (1 << SX2)) {
+ 3fe:	84 30       	cpi	r24, 0x04	; 4
+ 400:	c1 f5       	brne	.+112    	; 0x472 <__vector_2+0x9e>
+        // SX2 toggled and is high
+        _in = 0;
+ 402:	80 e0       	ldi	r24, 0x00	; 0
+ 404:	01 c0       	rjmp	.+2      	; 0x408 <__vector_2+0x34>
+    uint8_t _inputb, _in;
+    _inputb = PINB & ( (1 << SX1) | (1 << SX2) );
+    
+    if  (_inputb == (1 << SX1)) {
+        // SX1 toggled and is high
+        _in = 1;
+ 406:	81 e0       	ldi	r24, 0x01	; 1
+        } else {
+        return;
+    }
+    
+    //_lastinputb = _inputb;
+    if (_lastin == _in) {
+ 408:	90 91 73 00 	lds	r25, 0x0073
+ 40c:	98 13       	cpse	r25, r24
+ 40e:	03 c0       	rjmp	.+6      	; 0x416 <__vector_2+0x42>
+        _bit = LOW;
+ 410:	10 92 75 00 	sts	0x0075, r1
+ 414:	03 c0       	rjmp	.+6      	; 0x41c <__vector_2+0x48>
+        } else {
+        _bit = HIGH;
+ 416:	91 e0       	ldi	r25, 0x01	; 1
+ 418:	90 93 75 00 	sts	0x0075, r25
+    }
+    _lastin = _in;
+ 41c:	80 93 73 00 	sts	0x0073, r24
+
+    switch(_state) {
+ 420:	80 91 62 00 	lds	r24, 0x0062
+ 424:	81 30       	cpi	r24, 0x01	; 1
+ 426:	e9 f0       	breq	.+58     	; 0x462 <__vector_2+0x8e>
+ 428:	18 f0       	brcs	.+6      	; 0x430 <__vector_2+0x5c>
+ 42a:	82 30       	cpi	r24, 0x02	; 2
+ 42c:	11 f5       	brne	.+68     	; 0x472 <__vector_2+0x9e>
+ 42e:	20 c0       	rjmp	.+64     	; 0x470 <__vector_2+0x9c>
+        case SYNC:
+        if (_bit == LOW )  {
+ 430:	80 91 75 00 	lds	r24, 0x0075
+ 434:	81 11       	cpse	r24, r1
+ 436:	06 c0       	rjmp	.+12     	; 0x444 <__vector_2+0x70>
+            _zeroCount++;
+ 438:	80 91 64 00 	lds	r24, 0x0064
+ 43c:	8f 5f       	subi	r24, 0xFF	; 255
+ 43e:	80 93 64 00 	sts	0x0064, r24
+ 442:	17 c0       	rjmp	.+46     	; 0x472 <__vector_2+0x9e>
+            } else {
+            if (_zeroCount == 3)  {    // sync bits 0 0 0 1 found
+ 444:	80 91 64 00 	lds	r24, 0x0064
+ 448:	83 30       	cpi	r24, 0x03	; 3
+ 44a:	41 f4       	brne	.+16     	; 0x45c <__vector_2+0x88>
+                _state = ADDR;         // advance to next state
+ 44c:	81 e0       	ldi	r24, 0x01	; 1
+ 44e:	80 93 62 00 	sts	0x0062, r24
+                _baseAdr = 0;
+ 452:	10 92 60 00 	sts	0x0060, r1
+                _adrCount = 0;
+ 456:	10 92 63 00 	sts	0x0063, r1
+ 45a:	0b c0       	rjmp	.+22     	; 0x472 <__vector_2+0x9e>
+                } else {  // no valid sync, try again ...
+                _zeroCount = 0;       // reset _zeroCounter
+ 45c:	10 92 64 00 	sts	0x0064, r1
+ 460:	08 c0       	rjmp	.+16     	; 0x472 <__vector_2+0x9e>
+            } // endif _zeroCount
+        }  // endif _bit==LOW
+        break;
+        case ADDR:
+        switchAdr();
+ 462:	78 de       	rcall	.-784    	; 0x154 <switchAdr>
+        _adrCount++;
+ 464:	80 91 63 00 	lds	r24, 0x0063
+ 468:	8f 5f       	subi	r24, 0xFF	; 255
+ 46a:	80 93 63 00 	sts	0x0063, r24
+        break;
+ 46e:	01 c0       	rjmp	.+2      	; 0x472 <__vector_2+0x9e>
+        case DATA:
+        switchData();
+ 470:	d9 de       	rcall	.-590    	; 0x224 <switchData>
+    }
+    
+
+ 472:	ff 91       	pop	r31
+ 474:	ef 91       	pop	r30
+ 476:	bf 91       	pop	r27
+ 478:	af 91       	pop	r26
+ 47a:	9f 91       	pop	r25
+ 47c:	8f 91       	pop	r24
+ 47e:	7f 91       	pop	r23
+ 480:	6f 91       	pop	r22
+ 482:	5f 91       	pop	r21
+ 484:	4f 91       	pop	r20
+ 486:	3f 91       	pop	r19
+ 488:	2f 91       	pop	r18
+ 48a:	0f 90       	pop	r0
+ 48c:	0f be       	out	0x3f, r0	; 63
+ 48e:	0f 90       	pop	r0
+ 490:	1f 90       	pop	r1
+ 492:	18 95       	reti
+
+00000494 <_exit>:
+ 494:	f8 94       	cli
+
+00000496 <__stop_program>:
+ 496:	ff cf       	rjmp	.-2      	; 0x496 <__stop_program>

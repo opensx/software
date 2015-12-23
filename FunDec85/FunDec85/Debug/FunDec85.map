@@ -1,0 +1,494 @@
+Archive member included because of file (symbol)
+
+c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                              c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o (exit)
+c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                              sxfuntiny.o (__do_copy_data)
+c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                              sxfunread.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+_data_rec           0x1               sxfuntiny.o
+pwmCount            0x1               sxfunread.o
+_sx_tmp             0x1               sxfuntiny.o
+sx                  0x1               sxfunread.o
+fadeindex           0x2               sxfunread.o
+_lastin             0x1               sxfuntiny.o
+_channel            0x1               sxfuntiny.o
+counter             0x2               sxfunread.o
+_bit                0x1               sxfuntiny.o
+sxCopy              0x1               sxfunread.o
+_lastinputb         0x1               sxfuntiny.o
+pwm                 0x2               sxfunread.o
+_dataFrameCount     0x1               sxfuntiny.o
+data_received       0x1               sxfunread.o
+myFrameCount        0x1               sxfunread.o
+_dataBitCount       0x1               sxfuntiny.o
+myBaseAdr           0x1               sxfunread.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+ .text          0x00000000        0x0 sxfunread.o
+ .bss           0x00000000        0x0 sxfunread.o
+ .text          0x00000000        0x0 sxfuntiny.o
+ .bss           0x00000000        0x0 sxfuntiny.o
+ .bss._triggerBaseAdr
+                0x00000000        0x1 sxfuntiny.o
+ .bss._toggle   0x00000000        0x1 sxfuntiny.o
+ .data.fade     0x00000000       0x10 sxfuntiny.o
+ .bss._pwm_cnt  0x00000000        0x1 sxfuntiny.o
+ .text          0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+LOAD sxfunread.o
+LOAD sxfuntiny.o
+START GROUP
+LOAD c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libm.a
+END GROUP
+LOAD c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a
+LOAD c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25\libc.a
+LOAD c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x498
+ *(.vectors)
+ .vectors       0x00000000       0x1e c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.switchAdr
+                0x0000001e       0x10 sxfuntiny.o
+ .progmem.gcc_sw_table.switchData
+                0x0000002e       0x18 sxfuntiny.o
+ *(.progmem*)
+                0x00000046                . = ALIGN (0x2)
+                0x00000046                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000046        0x0 linker stubs
+ *(.trampolines*)
+                0x00000046                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000046                __ctors_start = .
+ *(.ctors)
+                0x00000046                __ctors_end = .
+                0x00000046                __dtors_start = .
+ *(.dtors)
+                0x00000046                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000046        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+                0x00000046                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000046        0xc c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000052       0x16 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+                0x00000052                __do_copy_data
+ .init4         0x00000068       0x10 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+                0x00000068                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000078        0x4 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+ *(.init9)
+ *(.text)
+ .text          0x0000007c        0x2 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+                0x0000007c                __vector_1
+                0x0000007c                __vector_12
+                0x0000007c                __bad_interrupt
+                0x0000007c                __vector_6
+                0x0000007c                __vector_3
+                0x0000007c                __vector_11
+                0x0000007c                __vector_13
+                0x0000007c                __vector_7
+                0x0000007c                __vector_5
+                0x0000007c                __vector_4
+                0x0000007c                __vector_9
+                0x0000007c                __vector_8
+                0x0000007c                __vector_14
+                0x0000007c                __vector_10
+                0x0000007e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.setup    0x0000007e       0x3c sxfunread.o
+                0x0000007e                setup
+ .text.main     0x000000ba       0x7c sxfunread.o
+                0x000000ba                main
+ .text.resetSync
+                0x00000136       0x1e sxfuntiny.o
+                0x00000136                resetSync
+ .text.switchAdr
+                0x00000154       0xd0 sxfuntiny.o
+                0x00000154                switchAdr
+ .text.switchData
+                0x00000224      0x1b0 sxfuntiny.o
+                0x00000224                switchData
+ .text.__vector_2
+                0x000003d4       0xc0 sxfuntiny.o
+                0x000003d4                __vector_2
+                0x00000494                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000494        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+                0x00000494                _exit
+                0x00000494                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000494        0x4 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000498                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000498
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+ .data          0x00800060        0x0 sxfunread.o
+ .data          0x00800060        0x0 sxfuntiny.o
+ .data          0x00800060        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr25\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060       0x19
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._baseAdr  0x00800060        0x1 sxfuntiny.o
+                0x00800060                _baseAdr
+ .bss._data     0x00800061        0x1 sxfuntiny.o
+                0x00800061                _data
+ .bss._state    0x00800062        0x1 sxfuntiny.o
+                0x00800062                _state
+ .bss._adrCount
+                0x00800063        0x1 sxfuntiny.o
+                0x00800063                _adrCount
+ .bss._zeroCount
+                0x00800064        0x1 sxfuntiny.o
+                0x00800064                _zeroCount
+ *(COMMON)
+ COMMON         0x00800065        0xc sxfunread.o
+                0x00800065                pwmCount
+                0x00800066                sx
+                0x00800067                fadeindex
+                0x00800069                counter
+                0x0080006b                sxCopy
+                0x0080006c                pwm
+                0x0080006e                data_received
+                0x0080006f                myFrameCount
+                0x00800070                myBaseAdr
+ COMMON         0x00800071        0x8 sxfuntiny.o
+                0x00800071                _data_rec
+                0x00800072                _sx_tmp
+                0x00800073                _lastin
+                0x00800074                _channel
+                0x00800075                _bit
+                0x00800076                _lastinputb
+                0x00800077                _dataFrameCount
+                0x00800078                _dataBitCount
+                0x00800079                PROVIDE (__bss_end, .)
+                0x00000498                __data_load_start = LOADADDR (.data)
+                0x00000498                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800079        0x0
+                0x00800079                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800079                PROVIDE (__noinit_end, .)
+                0x00800079                _end = .
+                0x00800079                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+
+.stabstr        0x00000000       0x97
+ *(.stabstr)
+ .stabstr       0x00000000       0x97 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.2.1002/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr25/crttn85.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f sxfunread.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 sxfuntiny.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x60
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 sxfunread.o
+ .debug_aranges
+                0x00000028       0x38 sxfuntiny.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x49b
+ *(.debug_info)
+ .debug_info    0x00000000      0x197 sxfunread.o
+ .debug_info    0x00000197      0x304 sxfuntiny.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x1b0
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xc7 sxfunread.o
+ .debug_abbrev  0x000000c7       0xe9 sxfuntiny.o
+
+.debug_line     0x00000000      0x316
+ *(.debug_line)
+ .debug_line    0x00000000      0x126 sxfunread.o
+ .debug_line    0x00000126      0x1f0 sxfuntiny.o
+
+.debug_frame    0x00000000       0xd0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x34 sxfunread.o
+ .debug_frame   0x00000034       0x9c sxfuntiny.o
+
+.debug_str      0x00000000      0x1c1
+ *(.debug_str)
+ .debug_str     0x00000000       0xdb sxfunread.o
+                                0x10f (size before relaxing)
+ .debug_str     0x000000db       0xe6 sxfuntiny.o
+                                0x1b8 (size before relaxing)
+
+.debug_loc      0x00000000      0x146
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2c sxfunread.o
+ .debug_loc     0x0000002c      0x11a sxfuntiny.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x58
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x30 sxfunread.o
+ .debug_ranges  0x00000030       0x28 sxfuntiny.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(FunDec85.elf elf32-avr)
+LOAD linker stubs
